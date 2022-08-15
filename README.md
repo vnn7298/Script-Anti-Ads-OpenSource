@@ -1,2 +1,2 @@
 # scripts
-scripts
+Script Anti-Ads OpenSource
