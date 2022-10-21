@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/css/mdui.min.css"
     />
-    <script src="https://recaptcha.net/recaptcha/api.js" async defer></script>
+<!--     <script src="https://recaptcha.net/recaptcha/api.js" async defer></script> -->
     <style>
       @media screen and (max-width: 600px) {
         .mdui-toolbar > img {
@@ -329,7 +329,6 @@
             username: $$("#username").val().trim(),
             domain: $$("#domain").val(),
             code: $$("#code").val().trim(),
-            grecaptcha_token: grecaptcha.getResponse(),
           };
           $$("#accountInfo, #activation").hide(),
             $$(".mdui-progress").show(),
