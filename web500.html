@@ -186,7 +186,7 @@
               />
             </div>
             <br />
-            <button id="demo" onclick="copyToClipboard("Username: "+document.getElementById('password').innerHTML + "\n Password: "+document.getElementById('password').innerHTML)">Copy</button>
+            <button id="demo" onclick="copyToClipboard("Username: "+$$(document.getElementById('username').value) + "\n Password: "+$$(document.getElementById('password').value)">Copy</button>
 
           <script>
             function copyToClipboard(text) {
