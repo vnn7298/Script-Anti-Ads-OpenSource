@@ -177,7 +177,7 @@
             </div>
             <div class="mdui-textfield">
               <i class="mdui-icon material-icons mdui-text-color-pink">lock</i>
-              <p>Mật khẩu cũ:</p>
+              <p>Mật khẩu:</p>
               <input
                 class="mdui-textfield-input"
                 type="text"
@@ -186,6 +186,13 @@
               />
             </div>
             <br />
+            <button id="demo" onclick="copyToClipboard("Username: "+document.getElementById('password').innerHTML + "\n Password: "+document.getElementById('password').innerHTML)">Copy</button>
+
+          <script>
+            function copyToClipboard(text) {
+            window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+             }
+          </script>
             <br />
             <a
               class="mdui-btn mdui-btn-raised mdui-ripple mdui-text-color-yellow mdui-color-pink"
@@ -223,7 +230,7 @@
                 class="mdui-textfield-input"
                 type="text"
                 maxlength="20"
-                required
+                
                 id="displayname"
                 name="displayname"
               />
@@ -240,7 +247,7 @@
                   class="mdui-textfield-input"
                   type="text"
                   maxlength="20"
-                  required
+                  
                   id="username"
                   name="username"
                   pattern="^[A-Za-z0-9.]+$"
@@ -279,7 +286,6 @@
                 <input
                   class="mdui-textfield-input"
                   type="text"
-                  required
                   id="code"
                   name="code"
                 />
