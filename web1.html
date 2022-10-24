@@ -165,7 +165,9 @@
             style="display: none"
             id="createdAccount"
           >
-            <div class="mdui-textfield">
+            // RESULT
+            <textarea style="width: 297px; height: 100px;" id="account"></textarea>
+<!--             <div class="mdui-textfield">
               <i class="mdui-icon material-icons mdui-text-color-pink">email</i>
               <p>Email: </p>
               <input
@@ -184,7 +186,7 @@
                 value=""
                 id="password"
               />
-            </div>
+            </div> -->
             <br />
             <br />
             <a
@@ -350,8 +352,10 @@
                 ) {
                   case "success":
                     $$("#createdAccount").show(),
-                      $$("#email").val(a.email),
-                      $$("#password").val(a.password),
+//                       $$("#email").val(a.email),
+//                       $$("#password").val(a.password),
+                      // RESULT
+                      $$("#account").val("Thông tin tài khoản 3STEAM - 1GB \nEmail: "+ a.email +"\nMật khẩu: "+a.password +"\n\nBạn đăng nhập vào portal.office.com để tự tạo mật khẩu mới, tiếp theo xác thực số điện thoại và email để sau này có thể tự lấy lại mật khẩu.Enjoy!!! "),
                        $$("#accountInfo, #activation").show();
                     break;
                   case "username exists":
